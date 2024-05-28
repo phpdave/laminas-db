@@ -261,7 +261,6 @@ class Statement implements StatementInterface, Profiler\ProfilerAwareInterface
         if ($this->parameterContainer->count() > 0) {
             if (!$this->parametersBound) {
                 $parameters = $this->parameterContainer->getNamedArray();
-                $directionsKeys = array_keys($directions);
                 $directionsValues = array_values($directions);
                 $idx=0;
                 foreach ($parameters as $name => &$value) {
