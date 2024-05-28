@@ -233,7 +233,7 @@ class Statement implements StatementInterface, Profiler\ProfilerAwareInterface
      * @throws Exception\InvalidQueryException
      * @return Result
      */
-    public function execute($parameters = null, $directions = null)
+    public function execute($parameters = null, $directions = [])
     {
         
         
